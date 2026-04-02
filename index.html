@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SF6 — RYU GUIDE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+  <style>
+    :root {
+      --bg:       #0d0d0f;
+      --bg2:      #131316;
+      --bg3:      #1a1a1e;
+      --border:   #2a2a30;
+      --accent:   #e8c840;
+      --accent2:  #e05a2b;
+      --accent3:  #2b91c8;
+      --text:     #d8d4cc;
+      --muted:    #6b6860;
+      --mono:     'IBM Plex Mono', monospace;
+      --sans:     'IBM Plex Sans', sans-serif;
+      --display:  'Bebas Neue', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; pointer-events: none; z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      background-size: 160px;
+      opacity: .4;
+    }
+
+    /* ── SIDEBAR ── */
+    #sidebar {
+      position: fixed; top: 0; left: 0; bottom: 0;
+      width: 220px;
+      background: var(--bg2);
+      border-right: 1px solid var(--border);
+      padding: 28px 0;
+      z-index: 100;
+      overflow-y: auto;
+      display: flex; flex-direction: column; gap: 0;
+    }
+
+    .sidebar-logo {
+      font-family: var(--display);
+      font-size: 2.4rem;
+      letter-spacing: .05em;
+      color: var(--accent);
+      padding: 0 24px 20px;
+      border-bottom: 1px solid var(--border);
+      line-height: 1;
+    }
+    .sidebar-logo span {
+      display: block;
+      font-size: .7rem;
+      font-family: var(--mono);
+      color: var(--muted);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .nav-section { padding: 18px 0 4px; }
+    .nav-section-title {
+      font-family: var(--mono);
+      font-size: .6rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0 24px 6px;
+    }
+    .nav-link {
+      display: block;
+      padding: 6px 24px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: .82rem;
+      font-family: var(--mono);
+      transition: color .15s, background .15s;
+      border-left: 2px solid transparent;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--accent);
+      background: rgba(232,200,64,.06);
+      border-left-color: var(--accent);
+    }
+
+    /* ── MAIN ── */
+    #main {
+      margin-left: 220px;
+      padding: 0 40px 80px;
+      position: relative; z-index: 1;
+      max-width: 960px;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative;
+      display: flex; align-items: flex-end;
+      padding: 20px 0 36px;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+    #hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, var(--bg) 30%, transparent 100%);
+    }
+    #hero-img {
+      position: absolute; right: -20px; top: 0; bottom: 0;
+      width: 65%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: .35;
+      mask-image: linear-gradient(90deg, transparent 0%, black 40%);
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-tag {
+      font-family: var(--mono);
+      font-size: .65rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 8px;
+    }
+    .hero-title {
+      font-family: var(--display);
+      font-size: 6rem;
+      line-height: .9;
+      color: #fff;
+      letter-spacing: .03em;
+    }
+    .hero-title em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .hero-sub {
+      font-size: .82rem;
+      color: var(--muted);
+      font-family: var(--mono);
+      margin-top: 14px;
+      letter-spacing: .1em;
+    }
+
+    /* ── SECTION HEADERS ── */
+    .section-header {
+      display: flex; align-items: center; gap: 14px;
+      margin: 52px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-header .num {
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--accent2);
+      letter-spacing: .1em;
+      min-width: 28px;
+    }
+    .section-header h2 {
+      font-family: var(--display);
+      font-size: 2rem;
+      letter-spacing: .06em;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    /* ── RENDERED MARKDOWN ── */
+    #content h1 { display: none; } /* replaced by hero */
+
+    #content h2 {
+      font-family: var(--display);
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: .06em;
+      color: #fff;
+      margin: 52px 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    #content h3 {
+      font-family: var(--mono);
+      font-size: .78rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 28px 0 10px;
+    }
+    #content h4 {
+      font-family: var(--mono);
+      font-size: .72rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin: 22px 0 8px;
+    }
+
+    #content h5 {
+      font-family: var(--mono);
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: var(--text);
+      margin: 22px 0 8px;
+    }
+
+    #content a {
+      color: var(--accent3);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent3);
+      transition: border-color .15s;
+    }
+    #content p { margin-bottom: 12px; color: var(--text); }
+
+    #content code {
+      font-family: var(--mono);
+      font-size: .8rem;
+      background: rgba(232,200,64,.1);
+      color: var(--accent);
+      padding: 1px 6px;
+      border-radius: 3px;
+      border: 1px solid rgba(232,200,64,.2);
+    }
+
+    #content pre {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      overflow-x: auto;
+      border-radius: 0 4px 4px 0;
+      margin: 16px 0;
+    }
+    #content pre code {
+      background: none; border: none; padding: 0;
+      font-size: .8rem; color: var(--text);
+    }
+
+    #content blockquote {
+      border-left: 3px solid var(--accent2);
+      margin: 16px 0;
+      padding: 10px 20px;
+      background: rgba(224,90,43,.07);
+      border-radius: 0 4px 4px 0;
+    }
+    #content blockquote p {
+      margin: 0;
+      font-size: .85rem;
+      color: #b8b4ac;
+      font-style: italic;
+    }
+
+    /* TABLES */
+    #content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: .82rem;
+      font-family: var(--mono);
+    }
+    #content thead tr {
+      background: var(--bg3);
+      /* border-bottom: 2px solid var(--accent); */
+    }
+    #content th {
+      text-align: left;
+      /* padding: 8px 14px; */
+      font-size: .65rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    #content td {
+      padding: 7px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    #content td img { max-width: 45%;}
+    #content tr:hover td { background: rgba(255,255,255,.02); }
+
+    /* ✅ ❌ styling */
+    #content td:first-child { color: #e8c840; }
+
+    /* LISTS */
+    #content ul, #content ol {
+      padding-left: 20px;
+      margin: 8px 0 14px;
+    }
+    #content li {
+      margin-bottom: 5px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    #content li code { font-size: .78rem; }
+
+    /* DETAILS / SUMMARY */
+    #content details {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin: 16px 0;
+      overflow-x: auto;
+    }
+
+    #content details li, #content details ul {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    #content iframe { width: 100%; max-width: 500px; }
+    
+
+    #content summary {
+      font-family: var(--mono);
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding: 12px 18px;
+      cursor: pointer;
+      user-select: none;
+      transition: background .15s;
+    }
+    #content summary:hover { background: rgba(232,200,64,.07); }
+    #content details[open] summary { border-bottom: 1px solid var(--border); }
+    #content details > *:not(summary) { padding: 0 18px 18px; }
+    #content details table { margin-top: 16px; }
+
+
+    #section-1 + details > *:not(summary), #section-1 + details[open] summary {
+      border: none;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+     #section-1 + details[open]  {
+      padding-top: 16px;
+    }
+
+
+    /* HR */
+    #content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    /* Images */
+    #content img {
+      max-width: 100%;
+      border-radius: 4px;
+      opacity: .85;
+      margin: 16px 0;
+    }
+
+    /* ── LOADING ── */
+    #loader {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: .8rem;
+      padding: 60px 0;
+    }
+    .loader-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 1s infinite;
+    }
+    .loader-dot:nth-child(2) { animation-delay: .2s; }
+    .loader-dot:nth-child(3) { animation-delay: .4s; }
+    @keyframes pulse { 0%,100%{opacity:.2} 50%{opacity:1} }
+
+    /* ── ERROR ── */
+    #error-msg {
+      display: none;
+      background: rgba(224,90,43,.1);
+      border: 1px solid var(--accent2);
+      border-radius: 4px;
+      padding: 20px 24px;
+      font-family: var(--mono);
+      font-size: .82rem;
+      color: var(--accent2);
+      margin: 20px 0;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      #sidebar { display: none; }
+      #main { margin-left: 0; padding: 0 20px 60px; }
+      .hero-title { font-size: 3.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="sidebar">
+    <div class="sidebar-logo">
+      RYU<span>Street fighter 6</span>
+    </div>
+    <div id="nav-links"></div>
+  </nav>
+
+  <main id="main">
+    <div id="loader">
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+      <span>Chargement du guide…</span>
+    </div>
+    <div id="error-msg"></div>
+    <div id="content"></div>
+  </main>
+
+  <script>
+  (async () => {
+    const MARKDOWN_FILE = 'SF6-RYU-GUIDE.md';
+    const loader  = document.getElementById('loader');
+    const content = document.getElementById('content');
+    const errMsg  = document.getElementById('error-msg');
+    const navEl   = document.getElementById('nav-links');
+
+    // ── Configure marked ──
+    marked.setOptions({ breaks: true, gfm: true });
+
+    // ── Fetch markdown ──
+    let md = '';
+    try {
+      const r = await fetch(MARKDOWN_FILE);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      md = await r.text();
+    } catch(e) {
+      loader.style.display = 'none';
+      errMsg.style.display = 'block';
+      errMsg.innerHTML = `
+        <strong>⚠ Impossible de charger <code>${MARKDOWN_FILE}</code></strong><br><br>
+        Ouvre <code>index.html</code> via un serveur local (ex : <code>python3 -m http.server</code> ou Live Server dans VS Code).<br>
+        Les navigateurs bloquent les requêtes de fichiers locaux par sécurité.<br><br>
+        <em>Erreur : ${e.message}</em>
+      `;
+      return;
+    }
+
+    // ── Render ──
+    content.innerHTML = marked.parse(md);
+    loader.style.display = 'none';
+
+    // ── Build sidebar nav from h2 headings ──
+    const sections = [
+      { label: 'Vue d\'ensemble', ids: [] },
+    ];
+
+    const headings = content.querySelectorAll('h2');
+    const sectionGroups = {
+      'Zoning': 'Neutral',
+      'Pokes': 'Neutral',
+      'Hit-confirm': 'Neutral',
+      'Anti-air': 'Defense',
+      'Parry': 'Defense',
+      'Drive reversal': 'Defense',
+      'Drive impact': 'Defense',
+      'Sortir du coin': 'Defense',
+      'Safe Jumps': 'Okizeme',
+      'Meaty': 'Okizeme',
+      'Throw Loop': 'Okizeme',
+      'Shimmy': 'Okizeme',
+      'Frametraps': 'Attack',
+      'Bnb\'s': 'Attack',
+      'Punish Counter': 'Attack',
+      'DI (corner)': 'Attack',
+      'Tick throw': 'Attack',
+      'Counter Hit': 'Attack',
+      'CONCLUSION': 'Général',
+    };
+
+    let currentGroup = '';
+    const groupEls = {};
+
+    // Overview link
+    const overviewLink = document.createElement('a');
+    overviewLink.onclick = e => { e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); };
+
+    const overviewSec = document.createElement('div');
+    overviewSec.appendChild(overviewLink);
+    navEl.appendChild(overviewSec);
+
+    headings.forEach((h, i) => {
+      const id = 'section-' + i;
+      h.id = id;
+      const text = h.textContent.trim();
+      const group = sectionGroups[text] || 'Général';
+
+      if (group !== currentGroup) {
+        currentGroup = group;
+        const sec = document.createElement('div');
+        sec.className = 'nav-section';
+        const title = document.createElement('div');
+        title.className = 'nav-section-title';
+        title.textContent = group;
+        sec.appendChild(title);
+        navEl.appendChild(sec);
+        groupEls[group] = sec;
+      }
+
+      const link = document.createElement('a');
+      link.className = 'nav-link';
+      link.href = `#${id}`;
+      link.textContent = text;
+      link.onclick = () => {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      };
+      groupEls[group].appendChild(link);
+    });
+
+    // ── Active nav on scroll ──
+    const allLinks = document.querySelectorAll('.nav-link[href^="#section-"]');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          allLinks.forEach(l => {
+            l.classList.toggle('active', l.getAttribute('href') === `#${id}`);
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    headings.forEach(h => observer.observe(h));
+
+    // ── Inject hero ──
+    // Remove the default h1 rendered by marked, inject custom hero
+    const h1 = content.querySelector('h1');
+    if (h1) {
+      const heroDiv = document.createElement('div');
+      heroDiv.id = 'hero';
+
+      // Try to get the first image as hero bg
+      const firstImg = content.querySelector('img');
+      let imgEl = '';
+      if (firstImg) {
+        heroDiv.innerHTML = `<img id="hero-img" src="${firstImg.src}" alt="">`;
+        firstImg.closest('p')?.remove();
+      }
+
+      heroDiv.innerHTML += `
+        <div class="hero-content">
+          <div class="hero-tag">Street Fighter 6</div>
+          <div class="hero-title"><em>Ryu</em><br>Les bases</div>
+          <div class="hero-sub">Neutral · Defense · Attack · Okizeme</div>
+        </div>
+      `;
+      content.insertBefore(heroDiv, content.firstChild);
+      h1.remove();
+
+      // Re-attach hero image
+      if (firstImg) {
+        const img = document.createElement('img');
+        img.id = 'hero-img';
+        img.src = firstImg.src;
+        img.alt = '';
+        heroDiv.insertBefore(img, heroDiv.firstChild);
+      }
+    }
+
+    // ── Remove leftover combo image (the second img) - keep it in place ──
+    // Already handled by markdown rendering
+
+  })();
+  </script>
+</body>
+</html>
