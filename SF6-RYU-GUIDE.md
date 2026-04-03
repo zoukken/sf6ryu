@@ -3,9 +3,8 @@
 
 
 #### Information
-⚠️ Ce site utilise la notation numpad.
-Elle est universelle et permet de décrire des manips rapidement.
-Ces notations sont toujours écrites par rapport au Joueur 1 (côté gauche).
+Ce site utilise la notation numpad. Elle permet de décrire des manips rapidement.
+Les notations sont toujours écrites par rapport au Joueur 1 (côté gauche).
 
     [7]  [8]  [9]  (↖  ↑  ↗)
     [4]  [5]  [6]  (←  N  →)
@@ -31,10 +30,10 @@ Ces notations sont toujours écrites par rapport au Joueur 1 (côté gauche).
 * Le neutral est la phase de jeu où tu cherches l'ouverture, lorsque tu es à distance de ton adversaire.
 * Gagner cette phase repose sur le <u>zoning</u> (contrôler l'espace) et les <u>footsies</u> (provoquer l'erreur adverse au corps-a-corps).
 * Note: L'importance du zoning et footsies changent selon le matchup.
-> <u>Objectifs</u>
-> ▪ Savoir jouer en fonction de ton placement à l'ecran
-> ▪ Chercher l'ouverture et provoquez l'erreur.
-> ▪ Construire un plan de jeu (ne pas trop compter sur la chance ou l'instinct)
+#### Objectifs
+* Savoir jouer en fonction de ton placement à l'ecran
+* Chercher l'ouverture et provoquez l'erreur.
+* Construire un plan de jeu (ne pas trop compter sur la chance ou l'instinct)
 
 <br>
 
@@ -54,10 +53,11 @@ Le zoning est a faire lorsque que tu est à distance d'un saut adverse:
 * Zone avec `236P`, puis rapproche toi petit a petit pour placer tes pokes ou anti-air (hado-trap).
 * Ton but n'est pas forcément de faire des dégâts mais de pousser à l'erreur et profiter de ton projectile pour te rapprocher.
 * Un bon zoning te permet de recupérer tes barres de drive ou sortir d'un burnout.
-> <u>Conseils</u>
-> ▪ Evite d'etre trop previsible quand tu est proche
-> ▪ Varie ton zoning pour provoquer l'erreur (whiff des jabs au lieu de faire une boule).
-> ▪ Evite de reculer sans raison pour ne pas arriver au coin
+
+#### Conseils
+* Evite d'etre trop previsible quand tu est proche
+* Varie ton zoning pour provoquer l'erreur (whiff des jabs au lieu de faire une boule).
+* Evite de reculer sans raison pour ne pas arriver au coin
 
 <a href="https://www.youtube.com/watch?v=OmiPgURVZdY" target="_blank">Exemple de zoning</a>
 
@@ -67,31 +67,30 @@ Le zoning est a faire lorsque que tu est à distance d'un saut adverse:
 À faire lorsque tu es proche et certain de le toucher.
 |  |  |
 | :--- | :--- |
-| 2MK <br> <img src="https://wiki.supercombo.gg/images/thumb/7/78/SF6_Ryu_2mk.png/398px-SF6_Ryu_2mk.png" width="100"> | Utile pour maintenir l’aversaire et rester a mi-distance<br>Utile pour contrer un shimmy<br>Hit confirm avec DR ou un special |
-| 2MP <br> <img src="https://wiki.supercombo.gg/images/thumb/d/d7/SF6_Ryu_2mp.png/351px-SF6_Ryu_2mp.png" width="100"> | Pratique pour contrer un DR adverse<br>Hit-confirm de loin avec un DR<br>Hit-confirm de près avec 5LK  |
-| 5MP <br> <img src="https://wiki.supercombo.gg/images/thumb/b/b6/SF6_Ryu_5mp.png/300px-SF6_Ryu_5mp.png" width="100"> | Utile en block pour placer un frametrap<br>Utile pour spacetrap et provoquer un whiff   |
-| 5HP <br> <img src="https://wiki.supercombo.gg/images/thumb/0/00/SF6_Ryu_5hp.png/342px-SF6_Ryu_5hp.png" width="100"> | Longue portée<br> A une grande fenêtre de cancel, facile à hit-confirm.<br> Permet d’agresser facilement l'adversaire<br>Fait de gros dégâts si tu le cancel avec un DR.  |
-| 5LK <br> <img src="https://wiki.supercombo.gg/images/thumb/4/4e/SF6_Ryu_5lk.png/325px-SF6_Ryu_5lk.png" width="100"> | A eviter si tu est collé a l'adversaire (-4 en garde)<br>Sors assez vite<br>Pratique pour whiff punish des low (punir des bas MK)|
+| 2MK <br> <img src="https://wiki.supercombo.gg/images/thumb/7/78/SF6_Ryu_2mk.png/398px-SF6_Ryu_2mk.png" width="100"> | Maintient l’adversaire à distance et contre les shimmys.  Hit confirm avec DR ou un special. |
+| 2MP <br> <img src="https://wiki.supercombo.gg/images/thumb/d/d7/SF6_Ryu_2mp.png/351px-SF6_Ryu_2mp.png" width="100"> | Pratique pour contrer un DR adverse. Hit-confirm de loin avec un DR et de près avec 5LK  |
+| 5MP <br> <img src="https://wiki.supercombo.gg/images/thumb/b/b6/SF6_Ryu_5mp.png/300px-SF6_Ryu_5mp.png" width="100"> | Utile en block pour placer un Frametrap/Tick throw ou provoquer un whiff   |
+| 5HP <br> <img src="https://wiki.supercombo.gg/images/thumb/0/00/SF6_Ryu_5hp.png/342px-SF6_Ryu_5hp.png" width="100"> | Facile à hit-confirm et inflige de gros dégâts s’il est cancel avec un DR. |
+| 5LK <br> <img src="https://wiki.supercombo.gg/images/thumb/4/4e/SF6_Ryu_5lk.png/325px-SF6_Ryu_5lk.png" width="100"> | Rapide, utile de loin pour whiff punish un low (bas MK), attention (-4F en garde)|
 
 
 
 ## Hit-confirm
 
 #### Comment s'entrainer à hit-confirm ?
-1) Dans le mode training, régler la garde du CPU sur `Aléatoire`
-2) Entraine toi a enchainer si tu vois un hit, et ne rien faire si le CPU bloque.
-3) Reconnaitre l'impact (étincelle jaune/orange et bruit de coup) et un blocage (étincelle blanche/bleue et bruit sec).
-> Selon le coup utilisé , tu as plus de temps pour reagir et confirm (exemple: `5HP`)
-> Pour les confirms de coups léger, enchaine d'abord 2 ou 3 coups, tu auras beacoup plus de temps pour enchainer la suite.
-> <ins>exemple:</ins> `2LK,2LP,2LP` > `214LK` 
+> <u>Training;</u> Régler la garde du CPU sur `Aléatoire`
+* Entraine toi a enchainer si tu vois un hit, et ne rien faire si le CPU bloque.
+* Fait la différence entre un hit (éclat jaune et bruit de coup) et une garde (éclat blanc et bruit sec).
 
-<br>
+#### Astuces
+* Selon le coup utilisé , tu as plus de temps pour reagir et confirm (exemple: `5HP`)
+* Enchaîne 2 ou 3 coups pour confirmer des lights, tu auras plus de temps pour la suite: `2LK,2LP,2LP` > `214LK` 
 
 #### Que faire si l'adversaire bloque ?
 * Ne prends pas l’habitude de toujours cancel avec un spécial. 
 * Tenter un tick throw si il a gardé ton jab
 * Si tu est trop négatif, ne rien et accepter de perdre ton tour de jouer
-* Tu peux aussi tenter un DR pour chercher l'overture: `5HP` > `DR` > `Throw`/`Frametrap`/`Low`/`Overhead`
+* Tu peux aussi tenter un Drive rush: `5HP` > `DR` > `Throw/Frametrap/Low/Overhead`
 
 ---
 <br>
@@ -105,10 +104,10 @@ Le zoning est a faire lorsque que tu est à distance d'un saut adverse:
 | | |
 | :--- | :--- |
 | Anti-air | Punir un adversair en l'air |
-| Air-to-air | Consiste à sauter pour frapper un adversaire qui est lui-même déjà en l'air, utile contre des sauts ambigus. |
+| Air-to-air | Sauter pour frapper un adversaire qui est en l'air, utile contre des sauts ambigus. |
 | Parry | `MP+MK (Peut être maintenu)` Bloque automatiquement tout les attaques sauf les choppes. |
-| Drive reversal | `6+HP+HK (Pendant une garde ou pendant ta relevée)` Repousse l'adversaire |
-| Drive impact | `HP+HK` Cette attaque absorbe plusieurs coups<br> Projette contre le mur (garde dans le coin), et rends stun si burnout.|
+| Drive reversal | `6+HP+HK` Repousse l'adversaire. A faire en garde après un coup lent ou lors de ta relevée |
+| Drive impact | `HP+HK` attaque et absorbe plusieurs coups <br> Projette contre le mur (si l'adversaire garde dans le coin, et rends stun en burnout).|
 
 
 
@@ -117,13 +116,13 @@ Le zoning est a faire lorsque que tu est à distance d'un saut adverse:
 |  |  |
 | :--- | :--- |
 | 623P <br> <img src="https://wiki.supercombo.gg/images/thumb/7/7e/SF6_Ryu_623p.png/338px-SF6_Ryu_623p.png" width="100"> | 623LP (corps-a-corps) <br>623MP/HP (mi-distance) |
-| 2HP <br> <img src="https://wiki.supercombo.gg/images/thumb/3/30/SF6_Ryu_2hp.png/255px-SF6_Ryu_2hp.png" width="100"> | corps-a-corps <br>Utile quand tu n'a pas le temps de sortir un shoryu<br> Attention: plus lent a sortir et a moins de portée.  |
+| 2HP <br> <img src="https://wiki.supercombo.gg/images/thumb/3/30/SF6_Ryu_2hp.png/255px-SF6_Ryu_2hp.png" width="100"> | Utile quand tu n'a pas le temps de sortir un shoryu<br> Attention: plus lent a sortir et a moins de portée.  |
 | 5HK <br> <img src="https://wiki.supercombo.gg/images/thumb/b/b1/SF6_Ryu_5hk.png/324px-SF6_Ryu_5hk.png" width="100"> | mi-distance<br>Idem que 2HP mais avec plus de portée |
 
-### Crosscut DP
-Permet de punir un cross-up en effectuant un shoryu dans le bon sens.  
+#### Crosscut DP
+Un crosscut DP permet de punir un cross-up en effectuant un shoryu dans le bon sens.  
 * Input: `6 > 3214+P`
-* En pratique: `Avancer` quand il saute, puis au moment ou il est au-dessus de toi, continuer avec `demi cercle arrière+P`
+* En pratique: Avancer quand il saute, puis au moment ou il est au-dessus de toi, terminer avec demi cercle arrière + P
 
 
 ## Parry
@@ -136,23 +135,24 @@ Le parry te permet de bloquer automatiquement n'importe quelle attaque du jeu (s
 * Il est possible de le cancel par un Drive Rush. 
 * Quand tu est au sol, Tu peux maintenir parry avant de te relever. 
 
-> Relâcher le parry a un temps de récupération. Juste apres avoir laché le parry tu peux immédiatement garder, mais tu sera vulnérable aux choppes. Une choppe sur un parry fait automatiquement Punish Counter et t'enlèves 1 barre de Drive.
+####  Recovery
+Lâcher le parry demande un court temps de récupération (recovery). Pendant ce court délai, tu peux bloquer, mais tu restes vulnérable aux choppes. Si on te choppe, c'est un Punish Counter et tu perds une barre de Drive.
 
 #### Perfect parry (PP)
 
-Le Perfect Parry s'active en appuyant sur Parry dans une fenêtre de 2 frames juste avant l'impact d'une attaque.
+Le Perfect Parry s'active en appuyant sur Parry dans une fenêtre de 2 frames juste avant l'impact d'une attaque. La punition apres un perfect reduit les dégats (scaling) et le gain de barre de Super.
 * Maintiens arrière pour perfect parry un coup mid, et bas ou bas-arrière pour un low.
 * En cas de succés, l'écran se fige l'ecran un petit instant, cela te laisse le temps de reagir et punir.
 * Sur un projectile, l'ecran ne se fige pas mais tu as courte animation qui réduit le recovery. 
-> La punition apres un perfect reduit les dégats (scaling) et le gain de barre de Super.
 
 #### Exemples pratiques
-* Contre le zoning : Parry des projectiles pour te rapprocher sans perdre ta barre de Drive.
-* Drive Impact : Parry un DI dans le coin pour éviter de te prendre le mur.
-* Wake-up : Maintenir parry a ta relevée pour bloquer des attaques ambiguës ou cross-ups.
-* Supers : Maintenir parry contre une super raté pour régénérer massivement ta barre de Drive.
-* Defense : Tenter des perfect parry sur des coups prévisibles pour trouver l'ouverture.
-> Lorsque l'adversaire fait plusieurs jabs dans ta garde, il y'a un trou ! tu peux tenter un coup invincible ou un perfect parry (moins risqué).
+* <u>Contre le zoning</u>: Parry des projectiles pour te rapprocher sans perdre ta barre de Drive.
+* <u>Drive Impact</u>: Parry un DI dans le coin pour éviter de te prendre le mur.
+* <u>Wake-up</u>: Maintenir parry a ta relevée pour bloquer des attaques ambiguës ou cross-ups.
+* <u>Supers</u>: Maintenir parry contre une super raté pour régénérer massivement ta barre de Drive.
+* <u>Defense</u>: Tenter des perfect parry sur des coups prévisibles pour trouver l'ouverture.
+> Note: Quand l'adversaire fait plusieurs jabs dans ta garde, il y'a un trou ! 
+> Tu peux donc tenter un perfect parry ou un coup invincible (plus risqué).
 
 
 ## Drive reversal
@@ -163,13 +163,10 @@ Le drive reversal permet de casser le pressing et de repousser l’adversaire et
 ####  Quand utiliser le drive reversal
 * A utiliser sur des coups fort qui ont un long blockstun.
 * Ca te permet d'éviter les situation de guess dans un pressing (high/low/throw)
-* Efficace contre les choppeurs.
-`exemple: apres une dive EX de Lili, un coup de tete de Zangief, un avant MK de Manon ...ect`
+* Pratique eviter une choppe speciale (apres une dive EX de Lili, un coup de tete de Zangief, un avant MK de Manon ...ect`)
 
-> ⚠️ Si l'adversaire bloque ton Drive Reversal, tu etes punissable.
-Note: Le drive reversal perds contrela choppe,
-il faudra utiliser un saut, backdash, ou un coup invincible (reversal ou super) 
-
+####  Notes
+Un drive reversal en garde est punissable (-6F), et il perds contre la choppe.
 
 
 ## Drive impact
@@ -180,8 +177,7 @@ Le drive impact est un coup a la fois offensif et defensif.
 
 
 ## Sortir du coin
-Être bloqué dans le coin, c'est le pire scénario, surtout si tu est en Burnout.
-Pour t'en sortir, il faut garder ton calme : Observe bien ce que fait l'adversaire.
+Être bloqué dans le coin, c'est le pire scénario, surtout si tu est en Burnout. Sans ressources (0 Super + Burnout), tu n'a plus d’options défensives contre le Drive impact. Pour t'en sortir, il faut garder ton calme : Observe bien ce que fait l'adversaire.
 
 #### Tes options defensives dans le coin
 
@@ -192,8 +188,6 @@ Pour t'en sortir, il faut garder ton calme : Observe bien ce que fait l'adversai
 | Throw loop | - `Déchoppe`<br>- `Backdash`<br>- `Reversal (shoryu EX)` |
 | Meaty | - `Garde`<br>- `Reversal (shoryu EX)` |
 | Shimmy | - `2MK`  |
-
-> ⚠️ Sans ressources (0 Super + Burnout), tu n'a plus d’options défensives contre le Drive impact.
 
 
 #### Notes
@@ -213,7 +207,7 @@ Verifie tes ressources (barre de drive, barre de vie, barre de super)
 
 ##### Offense 
 
-> Les combos mentionés mettent l'adversaire à terre --> Pense à continuer avec un Okizeme ou Charger (denjin).
+Tous les combos ci-dessous mettent l'adversaire à terre : Profites-en pour placer un Okizeme ou Charger (denjin).
 
 #### Les outils pour attaquer
 | | |
@@ -371,8 +365,8 @@ Un shimmy consiste à reculer à la relevée ou proche de ton adversaire pour qu
 ## Conclusion
 
 
-Rien n’est jamais joué d’avance, et tu ne joues pas seul...
-Apprends à lire le jeu de ton adversaire, anticipe et essaies de faire les bons choix.
+Rien n’est décidé d'avance et tu n'es pas seul : un match se fait à deux.
+Apprends à lire ton adversaire, anticipe et essaie de faire les bons choix.
 
 > Chaque décision est un risque ! Rien n'est sûr à 100 %. Sauf si ton adversaire se retrouve dans le coin, en burnout et sans ressources… Tout est une question de Risk/Reward. Il faut adapter ses choix selon le moment. 
 
