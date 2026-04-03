@@ -73,6 +73,7 @@ Le zoning est a faire lorsque que tu est à distance d'un saut adverse:
 | 5HP <br> <img src="https://wiki.supercombo.gg/images/thumb/0/00/SF6_Ryu_5hp.png/342px-SF6_Ryu_5hp.png" width="100"> | Facile à hit-confirm et inflige de gros dégâts s’il est cancel avec un DR. |
 | 5LK <br> <img src="https://wiki.supercombo.gg/images/thumb/4/4e/SF6_Ryu_5lk.png/325px-SF6_Ryu_5lk.png" width="100"> | Rapide, utile de loin pour whiff punish un low (bas MK), attention (-4F en garde)|
 
+Maintenant que tu connais tes pokes, tu dois apprendre à <u>hit-confirm</u>.
 
 
 ## Hit-confirm
@@ -88,8 +89,8 @@ Le zoning est a faire lorsque que tu est à distance d'un saut adverse:
 
 #### Que faire si l'adversaire bloque ?
 * Ne prends pas l’habitude de toujours cancel avec un spécial. 
-* Tenter un tick throw si il a gardé ton jab
-* Si tu est trop négatif, ne rien et accepter de perdre ton tour de jouer
+* Varie tes options , tu peux par exemple tenter un tick throw si il a gardé ton jab
+* Si tu est trop négatif, ne rien faire et accepter de perdre ton tour de jouer
 * Tu peux aussi tenter un Drive rush: `5HP` > `DR` > `Throw/Frametrap/Low/Overhead`
 
 ---
@@ -221,7 +222,8 @@ Tous les combos ci-dessous mettent l'adversaire à terre : Profites-en pour plac
 
 ## Bnb's
 
-les bnb's désignent les combos de base et fiables de ton personnage. il s'agit des combos que tu dois connaître par cœur car ils fonctionnent dans la majorité des situations.
+Les BnB sont les simples combos de base. Ils sont à maitriser et connaître par cœur.
+Ce sont des combos sûrs que tu ne rateras pas, même sous pression ou avec de la latence.
 
 | | |
 | :--- | :--- |
@@ -229,7 +231,9 @@ les bnb's désignent les combos de base et fiables de ton personnage. il s'agit 
 | Medium| -`2MK` > `236HP`<br>-`5MP, 2MP` > `214LK`/`236LK`<br>-`5MK` > `DRC 5HP` > `4HP` > `236HK` |
 | Heavy | -`6HP, 2MP` > `214LK`/`236LK`<br>-`5HP` > `DRC 5HK` > `2HP` > `236MK` |
 
-<a href="https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Combos" target="_blank">Voir plus de combos</a>
+#### Notes
+
+La Super (Niveau 3) est généralement placée en combo après `623P`,`236K` ou `214LP`. Être en mode Denjin (chargé) permet d'infliger plus de dégâts grâce à de nouvelles routes de combos et donne accès à une Super (Niveau 1) très rapide, capable de traverser les projectiles adverses. <a href="https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Combos" target="_blank">Voir plus de combos</a>
 
 
 
@@ -402,7 +406,8 @@ Apprends à lire ton adversaire, anticipe et essaie de faire les bons choix.
 
 ## liens utiles
 
-* <a href="https://fullmeter.com/fatonline/#/framedata/SF6/Ryu" target="_blank">SF6 framedata Ryu</a>
+* <a href="https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu" target="_blank">Wiki Supercombo - Ryu</a>
+* <a href="https://fullmeter.com/fatonline/#/framedata/SF6/Ryu" target="_blank">Fullmeter - SF6 framedata Ryu</a>
 * <a href="https://replaytheater.app/?game=sf6" target="_blank">SF6 Replays</a>
 
 
