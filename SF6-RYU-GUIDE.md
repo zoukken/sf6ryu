@@ -27,7 +27,7 @@ Les notations sont toujours écrites par rapport au Joueur 1 (côté gauche).
 ##### Neutral
 
 #### c'est quoi le neutral ?
-C'est la phase de jeu où tu cherches a toucher quand lorsque tu n'est pas proche de ton adversaire.  
+C'est la phase de jeu où tu cherches a toucher lorsque tu n'est pas proche de ton adversaire.  
 Dans un neutral tu va utiliser le zoning (longue distance) ou les footsies/pokes (mi-distance), 
 
 
