@@ -27,8 +27,8 @@ Les notations sont toujours écrites par rapport au Joueur 1 (côté gauche).
 ##### Neutral
 
 #### c'est quoi le neutral ?
-C'est la phase de jeu où tu cherches a toucher lorsque tu n'est pas proche de ton adversaire.  
-Dans un neutral tu va utiliser le zoning (longue distance) ou les footsies/pokes (mi-distance), 
+C'est la phase de jeu où tu cherches à toucher lorsque tu est à distance de ton adversaire.  
+Dans un neutral tu va principalement utiliser: le <u>zoning</u> (longue distance) et les <u>pokes</u> (mi-distance), 
 
 
 #### Objectifs
@@ -50,7 +50,7 @@ Dans un neutral tu va utiliser le zoning (longue distance) ou les footsies/pokes
 
 ## Zoning
 
-Avec Ryu zone quand tu es à distance d'un saut avec des projectiles.
+Avec Ryu, quand tu es à distance d'un saut, zone avec des projectiles.
 Ton but n'est pas forcément de toucher, mais de forcer l'erreur et de te rapprocher à mi-distance pour enfin placer tes pokes et etre capable d'anti-air. Un bon zoning te permet de récupérer tes barres de drive ou sortir d'un burnout.
 <a href="https://www.youtube.com/watch?v=OmiPgURVZdY" target="_blank">Exemple de zoning</a>
 
@@ -74,7 +74,7 @@ Utilise ces pokes pour hit-confirm quand tu es sûr de toucher ton adversaire.
 ## Hit-confirm
 
 > <u>Training;</u> Régler la garde du CPU sur `Aléatoire`
-* Entraine toi a enchainer si tu vois un hit, et ne rien faire si le CPU bloque.
+* Avec différents pokes, entraine toi a enchainer  si tu vois un hit, et ne rien faire si le CPU bloque.
 * Fait la différence entre un hit (éclat jaune et bruit de coup) et une garde (éclat blanc et bruit sec).
 
 #### Astuces
@@ -126,8 +126,9 @@ Faire un parry dans le vide consomme du drive (activation + maintien) et peut se
 
 #### Perfect parry (PP)
 `MP+MK (dans une fenêtre de 2 frames juste avant l'impact d'un coup)` 
-Pour le réussir, tu devra maintienir arrière (parry un mid/high) ou bas (parry un low). En cas de succès, l'écran se fige pour te laisser punir, sauf sur un projectile où seule ta recovery est réduite.
-La punition que tu fera apres un Perfect Parry réduit tes dégâts (scaling) et ton gain de barre Super.
+Pour le réussir, tu devra aussi maintienir arrière (parry un mid/high) ou bas (parry un low). 
+En cas de succès, l'écran se fige pour te laisser le temps de punir, sauf sur un projectile où seule ta recovery est réduite.
+La punition que tu fera réduit tes dégâts (scaling) et ton gain de barre de Super.
 
 
 #### Exemples pratiques
@@ -319,7 +320,8 @@ Un Meaty est une attaque lancée précisément à la relevée de ton adversaire.
 
 ## Throw Loop
 
-Le throw loop consiste à chopper dans le coin et rester proche de l’adversaire pour recommencer dès qu’il se relève. C’est une phase qui va l'obliger à choisir entre déchopper (risquant un shimmy ou meaty) ou encaisser en boucle. 
+Le throw loop consiste à chopper dans le coin et rester proche de l’adversaire pour recommencer dès qu’il se relève. 
+C’est une phase qui va l'obliger à choisir entre déchopper (risquant un shimmy ou meaty) ou encaisser en boucle. 
 Une arme redoutable sur SF6 !
 
 * Corner : `Throw` > `5LP (whiff)` > `Throw` ...
